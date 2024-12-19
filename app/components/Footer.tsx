@@ -3,9 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import {zen} from '@/app/font/font';
+
 
 const Footer = () => {
-  // Variantes de animación
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
@@ -23,7 +24,6 @@ const Footer = () => {
 
   return (
     <div className="w-full">
-      {/* Footer principal */}
       <motion.div
         variants={fadeInLeft}
         initial="hidden"
@@ -46,8 +46,6 @@ const Footer = () => {
             width={89}
           />
         </motion.div>
-
-        {/* Enlaces */}
         <motion.div
           variants={fadeInUp}
           initial="hidden"
@@ -55,20 +53,18 @@ const Footer = () => {
           viewport={{ once: true }}
           className="flex flex-col md:flex-row md:pr-16 md:space-x-20 items-center"
         >
-          <ul className="flex flex-col md:flex-row md:space-x-10 space-y-7 md:space-y-0 items-center">
+          <ul className={`${zen.className} flex flex-col uppercase md:flex-row md:space-x-10 space-y-7 md:space-y-0 items-center`}>
             <li>
               <Link href={"/nosotros"} target="_blank">
-                <h2>Nosotros</h2>
+                <h2 className={``}>Nosotros</h2>
               </Link>
             </li>
             <li>
               <Link href={"/contacto"} target="_blank">
-                <h2>Contacto</h2>
+                <h2 className={``}>Contacto</h2>
               </Link>
             </li>
           </ul>
-
-          {/* Redes sociales */}
           <ul className="flex flex-row md:space-x-5 space-x-3 pt-4 md:pt-0">
             <li>
               <Link href={""} target="_blank">

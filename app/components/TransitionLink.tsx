@@ -13,7 +13,7 @@ function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
- const TransitionLink: React.FC<TransitionLinkProps> = ({
+const TransitionLink: React.FC<TransitionLinkProps> = ({
   children,
   href,
   className,
@@ -37,7 +37,12 @@ function sleep(ms: number): Promise<void> {
   };
 
   return (
-    <Link {...props} href={href} className={className} onClick={handleTransition}>
+    <Link
+      {...props}
+      href={href}
+      className={className}
+      onClick={handleTransition}
+    >
       {children}
     </Link>
   );
