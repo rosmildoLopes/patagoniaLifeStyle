@@ -49,26 +49,30 @@ const Navbar: React.FC = () => {
             )}
           </div>
         </div>
-        <ul className="md:flex justify-center items-center hidden uppercase gap-20 text-text font-bold">
+        <ul className="md:flex justify-center items-center hidden uppercase gap-20 text-text ">
           <li>
             <TransitionLink
               href="/nosotros"
-              className=" text-xl font-black flex items-center uppercase justify-center h-12 transition duration-300 hover:scale-105"
+              className=" text-xl font-black flex items-center uppercase justify-center h-12 transition duration-300"
               onClick={handleLinkClick}
             >
               <DrawOutlineButton>
-                <h2 className="uppercase px-5 font-black text-xl">Nosotros</h2>
+                <h2 className="uppercase px-5 font-black  transition-all duration-300">
+                  Nosotros
+                </h2>
               </DrawOutlineButton>
             </TransitionLink>
           </li>
           <li>
             <TransitionLink
               href="/contacto"
-              className="text-xl font-black flex hover:shadow-sm shadow-black items-center uppercase justify-center h-12 transition duration-300 hover:scale-105"
+              className="text-xl font-black flex hover:shadow-sm shadow-black items-center uppercase justify-center h-12 transition duration-300"
               onClick={handleLinkClick}
             >
               <DrawOutlineButton>
-                <h2 className="uppercase font-black text-2xl">Contacto</h2>
+                <h2 className="uppercase font-black  transition-all duration-300">
+                  Contacto
+                </h2>
               </DrawOutlineButton>
             </TransitionLink>
           </li>
@@ -76,7 +80,7 @@ const Navbar: React.FC = () => {
             <Link
               href="#"
               target="_blank"
-              className="transition duration-300 hover:scale-105 hover:shadow-lg flex justify-center  items-center border-text font-black text-3xl h-12"
+              className="transition duration-300 hover:shadow-lg flex justify-center  items-center border-text font-black text-3xl h-12"
               onClick={handleLinkClick}
             >
               <DrawOutlineButton>
