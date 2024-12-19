@@ -3,7 +3,6 @@ import Carrousel from "./components/Carrousel";
 import Hero from "./components/Hero";
 import HeroProyecto from "./components/HeroProyecto";
 import Locales from "./components/Locales";
-import Team from "./components/Team";
 import { images } from "./constants/slideHome";
 import { locales } from "./constants/slideLocales";
 import {zen} from '@/app/font/font';
