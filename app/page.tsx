@@ -19,7 +19,6 @@ export default function Home() {
       >
         Nuestros Pilares
       </h2>
-      <Team />
       <HeroProyecto />
       <Beneficios />
       <Locales />
