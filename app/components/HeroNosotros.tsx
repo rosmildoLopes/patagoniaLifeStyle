@@ -9,7 +9,7 @@ const HeroNosotros = () => {
     <div className="flex flex-col w-10/12 pt-16 mx-auto gap-24 md:flex-row justify-center items-center">
       <div className="flex  md:w-1/2 ">
         <Image
-          src="nosotros-main.svg"
+          src="nosotros.svg"
           className="w-full"
           width={602}
           height={447}

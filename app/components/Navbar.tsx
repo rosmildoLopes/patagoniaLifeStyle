@@ -5,6 +5,7 @@ import { RiCloseFill } from "react-icons/ri";
 import { IoMenu } from "react-icons/io5";
 import { LuInstagram } from "react-icons/lu";
 import Link from "next/link";
+import TransitionLink from "./TransitionLink";
 
 const Navbar: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -14,7 +15,7 @@ const Navbar: React.FC = () => {
   };
 
   const handleLinkClick = (): void => {
-    setOpen(false); // Cierra el menú al hacer clic en un enlace
+    setOpen(false); 
   };
 
   return (
@@ -46,22 +47,22 @@ const Navbar: React.FC = () => {
         </div>
         <ul className="md:flex justify-center items-center hidden uppercase  gap-20 text-text font-bold tracking-wide">
           <li>
-            <Link
+            <TransitionLink
               href="/nosotros"
               className="py-3 px-5 border-2 border-text inline-block h-12"
               onClick={handleLinkClick}
             >
               NOSOTROS
-            </Link>
+            </TransitionLink>
           </li>
           <li>
-            <Link
+            <TransitionLink
               href="/contacto"
               className="py-3 px-5 border-2 border-text inline-block h-12"
               onClick={handleLinkClick}
             >
               CONTACTO
-            </Link>
+            </TransitionLink>
           </li>
           <li>
             <Link
@@ -82,22 +83,22 @@ const Navbar: React.FC = () => {
           `}
         >
           <li className="flex justify-center">
-            <Link
+            <TransitionLink
               href="/nosotros"
               className="py-7 px-5 inline-block"
               onClick={handleLinkClick}
             >
               NOSOTROS
-            </Link>
+            </TransitionLink>
           </li>
           <li className="flex justify-center">
-            <Link
+            <TransitionLink
               href="/contacto"
               className="py-7 px-5 inline-block"
               onClick={handleLinkClick}
             >
               CONTACTO
-            </Link>
+            </TransitionLink>
           </li>
           <li className="flex justify-center">
             <Link

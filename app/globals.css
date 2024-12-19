@@ -18,6 +18,11 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  transition-property: opacity, background-color,
+  transform,
+  filter;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
 }
 
 .embla__viewport {
@@ -29,3 +34,12 @@ body {
 .embla__slide {
   flex: 0 0 auto;
 }
+
+.page-transition {
+  opacity: 0; 
+  background-color: #3C6068;
+  transform: translateY(800px); 
+  filter: blur(10px); 
+  transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out, transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
