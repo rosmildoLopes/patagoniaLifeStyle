@@ -6,7 +6,8 @@ import { IoMenu } from "react-icons/io5";
 import { LuInstagram } from "react-icons/lu";
 import Link from "next/link";
 import TransitionLink from "./TransitionLink";
-import { zen } from "@/app/font/font";
+import { abel } from "@/app/font/font";
+import { DrawOutlineButton } from "./DrawOutlineButton";
 
 const Navbar: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -22,7 +23,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="fixed bg-background z-[1000] w-full top-0 m-0 box-border border mb-10">
       <div
-        className={` ${zen.className} flex items-center font-medium justify-around`}
+        className={` ${abel.className} flex items-center font-medium justify-around`}
       >
         <div className="p-5 md:w-auto w-full flex justify-between z-[50]">
           <Link href={"/"} onClick={() => setOpen(false)}>
@@ -48,33 +49,39 @@ const Navbar: React.FC = () => {
             )}
           </div>
         </div>
-        <ul className="md:flex justify-center items-center hidden uppercase gap-20 text-text font-bold tracking-wide">
+        <ul className="md:flex justify-center items-center hidden uppercase gap-20 text-text font-bold">
           <li>
             <TransitionLink
               href="/nosotros"
-              className="py-3 px-5 border-2 border-text inline-block h-12 hover:bg-text hover:text-background"
+              className=" text-xl font-black flex items-center uppercase justify-center h-12 transition duration-300 hover:scale-105"
               onClick={handleLinkClick}
             >
-              Nosotros
+              <DrawOutlineButton>
+                <h2 className="uppercase px-5 font-black text-xl">Nosotros</h2>
+              </DrawOutlineButton>
             </TransitionLink>
           </li>
           <li>
             <TransitionLink
               href="/contacto"
-              className="py-3 px-5 border-2 border-text inline-block h-12 hover:bg-text hover:text-background"
+              className="text-xl font-black flex hover:shadow-sm shadow-black items-center uppercase justify-center h-12 transition duration-300 hover:scale-105"
               onClick={handleLinkClick}
             >
-              Contacto
+              <DrawOutlineButton>
+                <h2 className="uppercase font-black text-2xl">Contacto</h2>
+              </DrawOutlineButton>
             </TransitionLink>
           </li>
           <li>
             <Link
               href="#"
               target="_blank"
-              className="py-3 px-2 border-2 hover:bg-text hover:text-background flex justify-center  items-center border-text font-black text-3xl h-12"
+              className="transition duration-300 hover:scale-105 hover:shadow-lg flex justify-center  items-center border-text font-black text-3xl h-12"
               onClick={handleLinkClick}
             >
-              <LuInstagram />
+              <DrawOutlineButton>
+                <LuInstagram />
+              </DrawOutlineButton>
             </Link>
           </li>
         </ul>

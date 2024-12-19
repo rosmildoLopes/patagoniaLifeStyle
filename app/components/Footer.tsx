@@ -1,9 +1,8 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import {zen} from '@/app/font/font';
+import {abel} from '@/app/font/font';
 
 
 const Footer = () => {
@@ -53,15 +52,15 @@ const Footer = () => {
           viewport={{ once: true }}
           className="flex flex-col md:flex-row md:pr-16 md:space-x-20 items-center"
         >
-          <ul className={`${zen.className} flex flex-col uppercase md:flex-row md:space-x-10 space-y-7 md:space-y-0 items-center`}>
-            <li>
+          <ul className={`${abel.className} flex flex-col font-bold uppercase md:flex-row md:space-x-10 space-y-7 md:space-y-0 items-center`}>
+            <li className="hover:border-b-2 hover:border-text transition duration-300">
               <Link href={"/nosotros"} target="_blank">
-                <h2 className={``}>Nosotros</h2>
+                <h2 className={`font-black text-2xl`}>Nosotros</h2>
               </Link>
             </li>
-            <li>
+            <li className="hover:border-b-2 hover:border-text transition duration-300">
               <Link href={"/contacto"} target="_blank">
-                <h2 className={``}>Contacto</h2>
+                <h2 className={`font-black text-2xl`}>Contacto</h2>
               </Link>
             </li>
           </ul>
