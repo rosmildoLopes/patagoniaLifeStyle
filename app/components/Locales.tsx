@@ -40,7 +40,7 @@ const Locales = () => {
           >
             <div className="w-2/6 relative">
               <Image
-                src="team.svg"
+                src="locales-foto-1.svg"
                 alt="icono"
                 width={200}
                 height={200}
@@ -50,7 +50,7 @@ const Locales = () => {
             </div>
             <div className="w-4/6 relative">
               <Image
-                src="team.svg"
+                src="locales-foto-2.svg"
                 alt="icono"
                 width={200}
                 height={200}
@@ -69,7 +69,7 @@ const Locales = () => {
           >
             <div className="w-4/6 relative h-full">
               <Image
-                src="team.svg"
+                src="locales-foto-3.svg"
                 alt="icono"
                 width={200}
                 height={200}
@@ -79,7 +79,7 @@ const Locales = () => {
             </div>
             <div className="w-2/6 relative">
               <Image
-                src="/team.svg"
+                src="/locales-foto-4.svg"
                 alt="team Image"
                 layout="fill"
                 objectFit="cover"
@@ -96,7 +96,7 @@ const Locales = () => {
           >
             <div className="w-2/6 relative">
               <Image
-                src="/team.svg"
+                src="/locales-foto-5.svg"
                 alt="team Image"
                 layout="fill"
                 objectFit="cover"
@@ -104,7 +104,7 @@ const Locales = () => {
             </div>
             <div className="w-4/6 relative">
               <Image
-                src="team.svg"
+                src="locales-foto-6.svg"
                 alt="icono"
                 width={200}
                 height={200}
@@ -124,15 +124,17 @@ const Locales = () => {
         >
           <div className="relative h-[25%]">
             <Image
-              src="/team.svg"
+              src="/locales-foto-7.svg"
               alt="team Image"
-              layout="fill"
-              objectFit="cover"
+              width={200}
+              height={200}
+              className="w-full"
+              layout="intrinsic"
             />
           </div>
           <div className="relative h-[50%]">
             <Image
-              src="/team.svg"
+              src="/locales-foto-8.svg"
               alt="team Image"
               layout="fill"
               objectFit="cover"
