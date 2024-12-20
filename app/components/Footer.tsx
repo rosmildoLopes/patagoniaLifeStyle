@@ -2,8 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import {abel} from '@/app/font/font';
-
+import { BottomOutlineButton } from "./BottomOutlineButton";
+import { abel } from "@/app/font/font";
 
 const Footer = () => {
   const fadeInUp = {
@@ -28,7 +28,7 @@ const Footer = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="bg-footer flex flex-col items-center md:flex-row md:justify-between py-10"
+        className="bg-footer flex flex-col items-center md:flex-row md:justify-between py-10 md:px-32"
       >
         {/* Logo */}
         <motion.div
@@ -36,7 +36,7 @@ const Footer = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="md:pl-16 pb-5"
+          className="pb-5"
         >
           <Image
             src={"logo-verde 2.svg"}
@@ -50,17 +50,21 @@ const Footer = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="flex flex-col md:flex-row md:pr-16 md:space-x-20 items-center"
+          className="flex flex-col md:flex-row md:space-x-20 items-center"
         >
-          <ul className={`${abel.className} flex flex-col font-bold uppercase md:flex-row md:space-x-10 space-y-7 md:space-y-0 items-center`}>
-            <li className="hover:border-b-2 hover:border-text transition duration-300">
+          <ul
+            className={`${abel.className} flex flex-col font-bold md:flex-row md:space-x-10 space-y-7 md:space-y-0 items-center`}
+          >
+            <li className="transition duration-300">
               <Link href={"/nosotros"} target="_blank">
-                <h2 className={`font-black text-2xl`}>Nosotros</h2>
+                  <BottomOutlineButton><h2 className={`font-black text-2xl uppercase`}>Nosotros</h2></BottomOutlineButton>
+                
               </Link>
             </li>
-            <li className="hover:border-b-2 hover:border-text transition duration-300">
+            <li className="transition duration-300">
               <Link href={"/contacto"} target="_blank">
-                <h2 className={`font-black text-2xl`}>Contacto</h2>
+                  <BottomOutlineButton><h2 className={`font-black text-2xl uppercase`}>Contacto</h2></BottomOutlineButton>
+                
               </Link>
             </li>
           </ul>

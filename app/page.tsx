@@ -10,11 +10,11 @@ import {zen} from '@/app/font/font';
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-20 pb-16 md:pb-44">
+    <div className="flex flex-col md:gap-20 pb-16 md:pb-44">
       <Hero />
       <Carrousel images={images} />
       <h2
-        className={`${zen.className} text-2xl md:text-4xl text-center pb-96 pt-10 border`}
+        className={`${zen.className} text-2xl md:text-4xl text-center pb-96 pt-1`}
       >
         Nuestros Pilares
       </h2>
