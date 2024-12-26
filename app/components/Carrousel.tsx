@@ -40,19 +40,19 @@ const Carousel = ({ options, images }: CarouselProps) => {
       <div className="embla__container flex gap-1">
         {images.map((image, index) => (
           <div
-            className="embla__slide flex mx-auto w-[90%] h-auto px-2 my-auto"
+            className="embla__slide flex mx-auto w-[80%] h-[35vh] px-2 my-auto"
             key={index}
           >
             <div
-              className={`${image.size} mx-auto flex flex-col embla__slide__content`}
+              className={`${image.size} mx-auto flex flex-col embla__slide__content h-full`}
             >
               <Image
                 src={image.src}
                 alt={image.alt}
                 width={image.width}
                 height={image.height}
-                className="w-full"
-                layout="intrinsic"
+                className="w-full h-full"
+                layout="intrisic"
               />
               <div className="flex flex-col text-center gap-4 px-3">
                 <h2 className="text-text font-bold text-[1rem]">

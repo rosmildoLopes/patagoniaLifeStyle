@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { BottomOutlineButton } from "./BottomOutlineButton";
+import { FooterButtons } from "./FooterButtons";
 import { abel } from "@/app/font/font";
 
 const Footer = () => {
@@ -28,7 +28,7 @@ const Footer = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="bg-footer flex flex-col items-center md:flex-row md:justify-between py-10 md:px-32"
+        className="bg-footer flex flex-col items-center md:flex-row md:justify-between py-10 gap-6 md:px-32"
       >
         {/* Logo */}
         <motion.div
@@ -50,25 +50,27 @@ const Footer = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="flex flex-col md:flex-row md:space-x-20 items-center"
+          className="flex flex-col md:flex-row gap-6 md:gap-16 items-center justify-center"
         >
           <ul
-            className={`${abel.className} flex flex-col font-bold md:flex-row md:space-x-10 space-y-7 md:space-y-0 items-center`}
+            className={`${abel.className} flex flex-col font-bold md:flex-row items-center gap-6 md:gap-12 `}
           >
             <li className="transition duration-300">
               <Link href={"/nosotros"} target="_blank">
-                  <BottomOutlineButton><h2 className={`font-black text-2xl uppercase`}>Nosotros</h2></BottomOutlineButton>
-                
+                <FooterButtons>
+                  <h2 className={`font-black text-2xl uppercase`}>Nosotros</h2>
+                </FooterButtons>
               </Link>
             </li>
             <li className="transition duration-300">
               <Link href={"/contacto"} target="_blank">
-                  <BottomOutlineButton><h2 className={`font-black text-2xl uppercase`}>Contacto</h2></BottomOutlineButton>
-                
+                <FooterButtons>
+                  <h2 className={`font-black text-2xl uppercase`}>Contacto</h2>
+                </FooterButtons>
               </Link>
             </li>
           </ul>
-          <ul className="flex flex-row md:space-x-5 space-x-3 pt-4 md:pt-0">
+          <ul className="flex flex-row gap-12">
             <li>
               <Link href={""} target="_blank">
                 <motion.div

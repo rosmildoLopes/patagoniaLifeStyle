@@ -7,8 +7,11 @@ import NumerosProyectos from "./NumerosProyctos";
 import { zen } from "@/app/font/font";
 
 const HeroProyecto = () => {
-  const sectionRef = useRef(null); 
-  const isInView = useInView(sectionRef, { margin: "0px 0px -200px 0px", once: true });
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, {
+    margin: "0px 0px -200px 0px",
+    once: true,
+  });
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -44,21 +47,23 @@ const HeroProyecto = () => {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1, delay: 0.5 }}
         className="flex flex-col justify-center items-center md:items-start gap-5 w-full md:w-1/2"
       >
-        <p className={`${zen.className} font-black text-2xl md:text-4xl md:pl-6`}>
+        <p
+          className={`${zen.className} font-black text-2xl md:text-4xl md:pl-6`}
+        >
           Sobre el proyecto
         </p>
         <p className="italic font-medium md:text-xl md:pl-6 text-center">
-          “Vive tu mejor versión, inspirado por la naturaleza patagónica”
+          “Viví tu mejor versión, inspirado por la naturaleza patagónica”
         </p>
         <p className="text-justify text-xl w-11/12 text-black mx-auto font-medium">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Descubrí un lugar donde la modernidad se encuentra con la serenidad de
+          la naturaleza patagónica. Nuestros departamentos unipersonales y
+          unifamiliares están diseñados con la máxima atención al detalle,
+          ofreciendo espacios que combinan elegancia y funcionalidad.
         </p>
         <NumerosProyectos />
       </motion.div>

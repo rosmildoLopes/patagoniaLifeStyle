@@ -7,7 +7,10 @@ import { zen } from "@/app/font/font";
 
 const Locales = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { margin: "0px 0px -200px 0px", once: false });
+  const isInView = useInView(ref, {
+    margin: "0px 0px -200px 0px",
+    once: true,
+  });
 
   return (
     <div
@@ -15,7 +18,7 @@ const Locales = () => {
       ref={ref}
     >
       <motion.h2
-        className={`${zen.className} font-black text-2xl md:text-4xl text-center -mb-16 md:mb-10`}
+        className={`${zen.className} font-black text-2xl md:text-4xl text-center  md:mb-10`}
         initial={{ opacity: 0, y: -50 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
         transition={{ duration: 1 }}

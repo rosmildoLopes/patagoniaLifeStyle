@@ -14,7 +14,7 @@ const Team = () => {
           className="w-full md:w-1/5 p-4 flex flex-col gap-5 md:gap-6"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, delay: index * 0.2 }}
         >
           <div className="flex justify-start items-start w-full">
