@@ -1,59 +1,56 @@
 const beneficiosData = [
   {
     id: 1,
-    image: "/icono2_beneficios.svg",
-    title: "Comoditi ",
+    image: "/iconos_beneficios1.svg",
+    title: "Diseño Natural",
     content:
-      "Uso de la información valiosa para tomar decisiónes más acertadas en el futuro.",
+      "Espacios semi-cubiertos donde el bosque se integra, creando una entrada acogedora y natural.",
   },
   {
     id: 2,
-    image: "/icono2_beneficios.svg",
-    title: "Comoditi 2",
+    image: "/iconos_beneficios2.svg",
+    title: "Vistas Panorámicas",
     content:
-      "Uso de la información valiosa para tomar decisiónes más acertadas en el futuro.",
+      "Impresionantes vistas de árboles centenarios, montañas y el Lago Nahuel Huapi.",
   },
   {
     id: 3,
-    image: "/icono2_beneficios.svg",
-    title: "Comoditi 3",
+    image: "/iconos_beneficios3.svg",
+    title: "Smart Building",
     content:
-      "Uso de la información valiosa para tomar decisiónes más acertadas en el futuro.",
+      "Tecnología domótica: cerraduras electrónicas, termostatos y cortinas inteligentes.",
   },
   {
     id: 4,
-    image: "/icono2_beneficios.svg",
-    title: "Comoditi 4",
+    image: "/iconos_beneficios4.svg",
+    title: "Eficiencia Energética",
     content:
-      "Uso de la información valiosa para tomar decisiónes más acertadas en el futuro.",
+      "Reduce el consumo de luz logrando mayor eficiencia y sostenibilidad.",
   },
   {
-    id: 4,
-    image: "/icono2_beneficios.svg",
-    title: "Comoditi 4",
-    content:
-      "Uso de la información valiosa para tomar decisiónes más acertadas en el futuro.",
+    id: 5,
+    image: "/iconos_beneficios5.svg",
+    title: "Mejora de Decisiones",
+    content: "Uso de información valiosa para decisiones más acertadas.",
   },
   {
-    id: 4,
-    image: "/icono2_beneficios.svg",
-    title: "Comoditi 4",
-    content:
-      "Uso de la información valiosa para tomar decisiónes más acertadas en el futuro.",
+    id: 6,
+    image: "/iconos_beneficios6.svg",
+    title: "Ahorro de Costos",
+    content: "Disminución de costos operativos y mantenimiento.",
   },
   {
-    id: 4,
-    image: "/icono2_beneficios.svg",
-    title: "Comoditi 4",
-    content:
-      "Uso de la información valiosa para tomar decisiónes más acertadas en el futuro.",
+    id: 7,
+    image: "/iconos_beneficios7.svg",
+    title: "Protección de Datos",
+    content: "Obtención de datos sin capturar imágenes personales.",
   },
   {
-    id: 4,
-    image: "/icono2_beneficios.svg",
-    title: "Comoditi 4",
-    content:
-      "Uso de la información valiosa para tomar decisiónes más acertadas en el futuro.",
+    id: 8,
+    image: "/iconos_beneficios8.svg",
+    title: "Amenidades Premium",
+    content: "Gimnasio, piscina, áreas verdes y espacios recreativos.",
   },
 ];
+
 export default beneficiosData;
