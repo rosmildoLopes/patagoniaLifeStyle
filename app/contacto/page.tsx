@@ -20,6 +20,7 @@ const page = () => {
           width={600}
           height={700}
           className=""
+          priority
         />
       </motion.div>
       <div className="w-full md:w-1/2 space-y-6">

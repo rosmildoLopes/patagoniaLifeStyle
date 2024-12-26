@@ -49,17 +49,17 @@ const HeroProyecto = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="flex flex-col justify-center items-center md:items-start gap-5 w-full md:w-1/2"
+        className="flex flex-col justify-center items-center md:items-start gap-5 md:gap-2 xl:gap-5 w-full md:w-1/2"
       >
         <p
-          className={`${zen.className} font-black text-2xl md:text-4xl md:pl-6`}
+          className={`${zen.className} font-black text-2xl  lg:text-3xl xl:text-4xl md:pl-5 xl:pl-6`}
         >
           Sobre el proyecto
         </p>
-        <p className="italic font-medium md:text-xl md:pl-6 text-center">
-          “Viví tu mejor versión, inspirado por la naturaleza patagónica”
+        <p className="italic font-bold md:text- md:pl-5 xl:pl-6 text-center">
+          Viví tu mejor versión, inspirado por la naturaleza patagónica
         </p>
-        <p className="text-justify text-xl w-11/12 text-black mx-auto font-medium">
+        <p className="text-justify md:text-lg xl:text-xl w-11/12 text-black mx-auto font-medium">
           Descubrí un lugar donde la modernidad se encuentra con la serenidad de
           la naturaleza patagónica. Nuestros departamentos unipersonales y
           unifamiliares están diseñados con la máxima atención al detalle,
